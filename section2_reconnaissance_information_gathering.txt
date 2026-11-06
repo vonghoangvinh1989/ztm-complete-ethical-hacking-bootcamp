@@ -1,0 +1,31 @@
+1) What is Information Gathering
+    Active: get data while when interacting with target
+    Passive:
+        get information via a middle source (search engine)
+
+    What we should get:
+        Company Info
+        Ip address/ addresses
+        Emails
+        Technologies: OS, framework, programming languages
+        Phone Number
+
+2) Obtaining Ip Address, Physical Address using Whois Tool
+    a) Active
+        ping etf.bg.ac.rs --> send icmp packet to 'etf.bg.ac.rs' using ping and get ip address
+
+        nslookup etf.bg.ac.rs --> we can use nslookup to get the ip of domain we enter
+
+        whois etf.bg.ac.rs --> get info about the domain using 'whois' tool
+    b) Passive 
+        Go to firefox and search 'what is the ip address of this website' and use these
+websites to get ip address
+
+3) Whatweb Stealthy Scan 
+    whatweb --help --> to see help options of whatweb commands
+
+    whatweb arh.bg.ac.rs --> use whatweb to scan domain 'arh.bg.ac.rs'
+
+    whatweb arh.bg.ac.rs -v --> with verbose option '-v', the result will be more clean 
+
+    

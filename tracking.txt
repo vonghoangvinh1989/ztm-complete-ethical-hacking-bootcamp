@@ -1,0 +1,23 @@
+# setting up our hacking lab
+what is a virtual machine -> done 
+why linux -> done 
+virtual box and kali linux download -> done
+note kali linux updates all the time -> done
+creating our first virtual machine -> done 
+kali linux installation -> done
+networking basics -> done 
+full screen mode and network settings -> done
+troubleshooting network connecting in kali linux -> done
+5 stages of a penetration test -> done
+
+# linux operating system
+navigating through linux system -> done
+creating files and managing directories -> done
+network commands and sudo privileges in kali -> done
+
+# reconnaissance & information Gathering
+what is information gathering -> done
+obtaining ip address, physical address using whois tool -> done
+whatweb stealthy scan -> done 
+aggressive website technology --> waiting 
+
