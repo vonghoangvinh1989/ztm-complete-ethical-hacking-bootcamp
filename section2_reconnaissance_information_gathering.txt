@@ -17,6 +17,7 @@
         nslookup etf.bg.ac.rs --> we can use nslookup to get the ip of domain we enter
 
         whois etf.bg.ac.rs --> get info about the domain using 'whois' tool
+    
     b) Passive 
         Go to firefox and search 'what is the ip address of this website' and use these
 websites to get ip address
@@ -28,4 +29,44 @@ websites to get ip address
 
     whatweb arh.bg.ac.rs -v --> with verbose option '-v', the result will be more clean 
 
+4) Aggressive Website Technology Discovering on IP Range 
+    whatweb 172.16.1.1-172.16.1.255 --aggression 3 -v --> use whatweb to scan a range of ip with
+aggression level and verbose
+
+    whatweb 172.16.1.1-172.16.1.255 --aggression 3 -v --no-errors --> same like above with
+no showing errors
+
+    whatweb 172.16.1.1-172.16.1.255 --aggression 3 -v --no-errors --log-verbose=results --> also output
+the result into file with name 'results'
+
+5) Gathering Emails Using theHarvester & Hunter.io
+    a) Search from theHarvester
+        theHarvester --help --> view help of 'theHarvester'
+
+        theHarvester -d mas.bg.ac.rs -b all --> -d for domain and -b for source with 'all', 
+    default limit is 500, (note: scan it multiple times to get better results if the first time 
+    does not get any)
+
+        theHarvester -d mas.bg.ac.rs -b google --> get from source 'google'
+
+    b) Search from tool https://hunter.io
+        create account and search by command domain 
+
+6) How to download tools online
+    cd RED_HAWK
+    php rhawk.php --> run tool red hawk to search 
+
+7) Finding Usernames With Sherlock 
+    sherlock --version --> view the version of sherlock 
+
+    systax:
+        sherlock username --> with 'username' is the username we input to search 
+
+8) Email Scraper Tool in Python3 
+    + download the script 'email-scraper.py'
+    + run with: python3 email-scraper.py 
+        https://mas.bg.ac.rs 
+
     
+
+

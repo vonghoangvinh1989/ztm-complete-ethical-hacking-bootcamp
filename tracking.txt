@@ -19,5 +19,14 @@ network commands and sudo privileges in kali -> done
 what is information gathering -> done
 obtaining ip address, physical address using whois tool -> done
 whatweb stealthy scan -> done 
-aggressive website technology --> waiting 
+aggressive website technology -> done
+gathering emails using theHavester & hunter.io -> done
+how to download tools online -> done
+finding usernames with sherlock -> done
+bonus email scraper tool in python3 -> done 
+
+# scanning 
+theory behind scanning --> waiting
+
+
 
