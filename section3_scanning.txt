@@ -93,4 +93,17 @@ it scans, IDS will be have a hard time to know which ip is ours
 to scan using decoy
 
 11) Security Evasion Nmap Options 
+    sudo nmap -S 8.8.8.8 -Pn -e eth0 -g 7777 
+        Option	Function
+            -S	Spoof source IP address
+            -Pn	Skip host discovery
+            -e	Specify network interface
+            -g	Specify source port
+
+    sudo nmap -sF 172.16.1.100 --> try to perform a FIN scan, if target response with RST: port is closed,
+no-response means that port is open or filtered
+        Note: the FIN flag (Finish) in TCP is used to indicate that a device has finished 
+    sending data and wants to gracefully terminate a TCP connection
+    
+    Trying to avoid IDS: we can use -T 0 (paranoid) or 1 (sneaky)
     
