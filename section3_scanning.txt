@@ -59,10 +59,38 @@ default level is 7
     sudo nmap -A 172.16.1.100 --> for aggressive scanning, it enables version detection without
 specifying -sV, it enable something called nmap script scanning 
 
+8) Filtering Port Range and Output of Scan Results 
+    -sn: ping scan, check which host discovery 
+
+    sudo nmap -sn 172.16.1.1-255 --> check host from 1 to 255
+
+    sudo nmap -p 80 172.16.1.100 --> scan specific port with '-p' option 
+
+    sudo nmap -p 80,22,100 172.16.1.100 --> scan multiple ports
+    sudo nmap -p 1-100 172.16.1.100 --> scan multiple ports
+
+    sudo nmap -F 172.16.1.100 --> scan first 100 ports 
+
+    sudo nmap -sS 172.16.1.100 >> output_of_scan.txt --> output scanning result 
+
+    sudo nmap -oN output -sS 172.16.1.100 --> output to terminal and file at the same time 
+
+9) What is Firewall/IDS 
+    + network firewall: filter traffic between two or more networks
+    + host-based firewall: filter traffic only going in or out from that specific machine 
+    + IDS (intrusion detection system): software application that monitors network for any malicious
+activity
     
+10) Using decoys and packet fragmentation 
+    sudo nmap -f 172.16.1.213 --> -f option is to use fragmented ip packets, split tcp header over
+several packets to make it harder for packet filters or intrusion, default will split into 8 bytes or less, with 
+(-f -f will split into 16 bytes)
 
+    sudo nmap -D RND:5 172.16.1.213 -sS --> scanning using decoy (-D), RND:5 specify 5 ip addresses so when 
+it scans, IDS will be have a hard time to know which ip is ours 
 
+    sudo nmap -D 192.168.1.2,192.168.1.5,192.168.1.15,ME 192.168.1.213 --> using specified ip addresses 
+to scan using decoy
 
-
-
-
+11) Security Evasion Nmap Options 
+    
