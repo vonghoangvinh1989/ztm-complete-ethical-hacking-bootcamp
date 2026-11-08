@@ -1,2 +1,68 @@
-1) Theory behind scanning 
+1) Theory behind scanning
+    + focus on technology side 
+    + looking for open ports
+        80: http (web server)
+        443: https
+        21: ftp 
+        22: ssh port 
+        53: dns 
+        25: smtp 
+
+ 2) tcp & udp 
+    tcp: 3-way handshakes
+        syn 
+        syn-ack 
+        ack 
+
+    udp: throw all the error checking stuff out
+
+3) Netdiscover: to figure how many host (machines) we have in our network 
+    sudo arp -a --> display arp table on your computer, sometimes we have to ping successfully
+another machines to get the result (so it showed on arp table), not so good tool
+
+    sudo netdiscover --> find any available machines in local network, better solution
+
+    netstat -nr --> to find default gateway or router
+
+4) Performing First Nmap Scan 
+    nmap --help --> get help of nmap 
+
+    nmap 192.168.0.19 --> scan metasploitable machine, nmap by default scan 1000 ports 
+
+    nmap 192.168.0.1/24 --> scan range of ip address 
+
+5) Different Nmap Scan Types 
+    a) tcp synscan 
+        sudo nmap -sS 172.16.1.100 --> never open full tcp connection (just sendind syn), if the
+    target sending synack back that means that port is listening or open, if target is sending
+    RST or reset, that means port is closed, in case target does not send anything back after 
+    several tries, port will be marked as filtered (could happen because of fireware)
+
+        sudo nmap -sT 172.16.1.100 --> tcp connect scan, perform normal tcp three-way 
+    handshakes connection, leave trace that you performed a nmap scan 
+
+        sudo nmap -sU 172.16.1.100 --> scan udp ports
+
+6) Discovering Target Operating System 
+    sudo nmap -O 172.16.1.100 --> nmap scan with trying to get os version 
+        (sometimes, we can get result like Oracle Virtualbox virtual NIC, meaning Nmap 
+        figure this is a virtual machine such as honeypot)
+
+    sudo nmap -O 172.16.1.213 --> trying to scan windows machine 
+
+7) Detecting Version of Service Running on an Open Port 
+    sudo nmap -sV 172.16.1.100 --> scanning and detecting version of service running 
+
+    sudo nmap -sV --version-intensity 9 172.16.1.100 --> version scanning with intensity (0 - 9),
+default level is 7 
+
+    sudo nmap -A 172.16.1.100 --> for aggressive scanning, it enables version detection without
+specifying -sV, it enable something called nmap script scanning 
+
     
+
+
+
+
+
+

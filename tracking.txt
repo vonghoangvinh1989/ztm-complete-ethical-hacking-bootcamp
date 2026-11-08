@@ -26,7 +26,15 @@ finding usernames with sherlock -> done
 bonus email scraper tool in python3 -> done 
 
 # scanning 
-theory behind scanning --> waiting
-
+theory behind scanning -> done
+tcp & udp -> done
+installing vulnerable virtual machine -> done
+installing vulnerable virtual machine on m-series macbooks -> done
+netdiscover -> done
+performing first nmap scan -> done 
+different nmap scan types -> done 
+discovering target operating system -> done 
+detecting version of service running on an open port -> done 
+filtering port range and output of scan results --> waiting
 
 
