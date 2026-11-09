@@ -41,7 +41,12 @@ using decoys and packet fragmentation -> done
 security evasion nmap options -> done 
 
 # python coding project 1 - portscanner 
-coding a portscanner in python3 --> waiting
+coding a portscanner in python3 -> done
+
+# vunerability anylysis
+finding first vulnerability with nmap script -> done 
+manual vulnerability analysis & searchsploit -> done 
+nessus installation --> waiting 
 
 
 
