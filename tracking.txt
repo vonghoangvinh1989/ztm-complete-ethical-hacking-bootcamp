@@ -46,7 +46,17 @@ coding a portscanner in python3 -> done
 # vunerability anylysis
 finding first vulnerability with nmap script -> done 
 manual vulnerability analysis & searchsploit -> done 
-nessus installation --> waiting 
+nessus installation -> done 
+discovering vulnerabilities with nessus -> done
+scanning windows 7 machine with nessus -> done 
+let's cool down for a bit -> done 
+
+# exploitation and gaining access 
+what is exploitation -> done
+what is vulnerability -> done 
+reverse shells, bind shells -> done 
+metasploit framework structure --> waiting
+
 
 
 
